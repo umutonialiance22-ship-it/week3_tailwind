@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Layout Gym</title>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- ===================================================== -->
+    <!-- EXERCISE 1: NINE POSITIONS -->
+    <!-- ===================================================== -->
+
+    <section class="p-8">
+        <h1 class="text-2xl font-bold mb-6">
+            Exercise 1 — Nine Positions
+        </h1>
+
+        <div class="grid grid-cols-3 gap-6">
+
+            <!-- Top Left -->
+            <div>
+                <h2 class="font-semibold mb-2">Top Left</h2>
+
+                <div class="flex h-64 border-2 border-gray-300 bg-white items-start justify-start p-2">
+                    <button class="w-12 h-12 bg-emerald-500 text-white rounded-lg">
+                        Box
+                    </button>
+                </div>
+            </div>
+
+            <!-- Top Center -->
+            <div>
+                <h2 class="font-semibold mb-2">Top Center</h2>
+
+                <div class="flex h-64 border-2 border-gray-300 bg-white items-start justify-center p-2">
+                    <button class="w-12 h-12 bg-emerald-500 text-white rounded-lg">
+                        Box
+                    </button>
+                </div>
+            </div>
+
+            <!-- Top Right -->
+            <div>
+                <h2 class="font-semibold mb-2">Top Right</h2>
+
+                <div class="flex h-64 border-2 border-gray-300 bg-white items-start justify-end p-2">
+                    <button class="w-12 h-12 bg-emerald-500 text-white rounded-lg">
+                        Box
+                    </button>
+                </div>
+            </div>
+
+            <!-- Center Left -->
+            <div>
+                <h2 class="font-semibold mb-2">Center Left</h2>
+
+                <div class="flex h-64 border-2 border-gray-300 bg-white items-center justify-start p-2">
+                    <button class="w-12 h-12 bg-emerald-500 text-white rounded-lg">
+                        Box
+                    </button>
+                </div>
+            </div>
+
+            <!-- Center -->
+            <div>
+                <h2 class="font-semibold mb-2">Center</h2>
+
+                <div class="flex h-64 border-2 border-gray-300 bg-white items-center justify-center p-2">
+                    <button class="w-12 h-12 bg-emerald-500 text-white rounded-lg">
+                        Box
+                    </button>
+                </div>
+            </div>
+
+            <!-- Center Right -->
+            <div>
+                <h2 class="font-semibold mb-2">Center Right</h2>
+
+                <div class="flex h-64 border-2 border-gray-300 bg-white items-center justify-end p-2">
+                    <button class="w-12 h-12 bg-emerald-500 text-white rounded-lg">
+                        Box
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bottom Left -->
+            <div>
+                <h2 class="font-semibold mb-2">Bottom Left</h2>
+
+                <div class="flex h-64 border-2 border-gray-300 bg-white items-end justify-start p-2">
+                    <button class="w-12 h-12 bg-emerald-500 text-white rounded-lg">
+                        Box
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bottom Center -->
+            <div>
+                <h2 class="font-semibold mb-2">Bottom Center</h2>
+
+                <div class="flex h-64 border-2 border-gray-300 bg-white items-end justify-center p-2">
+                    <button class="w-12 h-12 bg-emerald-500 text-white rounded-lg">
+                        Box
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bottom Right -->
+            <div>
+                <h2 class="font-semibold mb-2">Bottom Right</h2>
+
+                <div class="flex h-64 border-2 border-gray-300 bg-white items-end justify-end p-2">
+                    <button class="w-12 h-12 bg-emerald-500 text-white rounded-lg">
+                        Box
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- EXERCISE 2: NAVBAR -->
+    <!-- ===================================================== -->
+
+    <section class="p-8">
+        <h1 class="text-2xl font-bold mb-6">
+            Exercise 2 — Navbar
+        </h1>
+
+        <nav class="bg-white shadow-md rounded-xl px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="font-bold text-xl text-emerald-600">
+                LayoutGym
+            </div>
+
+            <!-- Links -->
+            <div class="flex gap-6">
+                <a href="#" class="text-gray-600 hover:text-emerald-600">
+                    Home
+                </a>
+
+                <a href="#" class="text-gray-600 hover:text-emerald-600">
+                    About
+                </a>
+
+                <a href="#" class="text-gray-600 hover:text-emerald-600">
+                    Projects
+                </a>
+
+                <a href="#" class="text-gray-600 hover:text-emerald-600">
+                    Contact
+                </a>
+            </div>
+
+            <!-- Sign Up -->
+            <button
+                class="bg-emerald-600 text-white px-5 py-2 rounded-lg
+                       hover:bg-emerald-700
+                       focus-visible:outline-none
+                       focus-visible:ring-2
+                       focus-visible:ring-emerald-500
+                       focus-visible:ring-offset-2">
+                Sign up
+            </button>
+
+        </nav>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- EXERCISE 3: COMMENT LIST -->
+    <!-- ===================================================== -->
+
+    <section class="p-8">
+        <h1 class="text-2xl font-bold mb-6">
+            Exercise 3 — Comment List
+        </h1>
+
+        <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-md p-6 space-y-6">
+
+            <!-- Comment 1 -->
+            <div class="flex gap-4">
+
+                <div class="shrink-0">
+                    <div class="w-12 h-12 rounded-full bg-emerald-200 flex items-center justify-center font-bold text-emerald-700">
+                        UA
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="font-bold">
+                        Umutoni
+                    </h2>
+
+                    <p class="text-gray-600">
+                        I really enjoyed this project. The Tailwind classes make
+                        layouts much easier to build.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Comment 2 -->
+            <div class="flex gap-4">
+
+                <div class="shrink-0">
+                    <div class="w-12 h-12 rounded-full bg-blue-200 flex items-center justify-center font-bold text-blue-700">
+                        AL
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="font-bold">
+                        Alice
+                    </h2>
+
+                    <p class="text-gray-600">
+                        This is a really useful way to understand flexbox,
+                        especially when learning how items move inside a container.
+                        I like seeing the different positions clearly.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Comment 3 - VERY LONG TEXT -->
+            <div class="flex gap-4">
+
+                <div class="shrink-0">
+                    <div class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center font-bold text-pink-700">
+                        JM
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="font-bold">
+                        Jean
+                    </h2>
+
+                    <p class="text-gray-600">
+                        This is a very long comment designed specifically to
+                        demonstrate why the avatar should not shrink when the
+                        content becomes large. The text keeps growing and taking
+                        up available space, but because the avatar has the
+                        shrink-0 class, it keeps its original size instead of
+                        becoming smaller to make room for the long paragraph.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- EXERCISE 4: DASHBOARD GRID -->
+    <!-- ===================================================== -->
+
+    <section class="p-8">
+        <h1 class="text-2xl font-bold mb-6">
+            Exercise 4 — Dashboard Grid
+        </h1>
+
+        <div class="grid grid-cols-4 gap-4">
+
+            <!-- First card spans 2 columns -->
+            <div class="col-span-2 bg-white p-6 rounded-xl shadow">
+                <h2 class="font-bold text-xl">Main Overview</h2>
+                <p class="text-gray-600 mt-2">
+                    This card spans two columns.
+                </p>
+            </div>
+
+            <!-- Normal card -->
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="font-bold">Users</h2>
+                <p class="text-2xl font-bold mt-2">250</p>
+            </div>
+
+            <!-- Row span 2 -->
+            <div class="row-span-2 bg-white p-6 rounded-xl shadow">
+                <h2 class="font-bold text-xl">Activity</h2>
+
+                <div class="mt-4 space-y-4 text-gray-600">
+                    <p>New user registered</p>
+                    <p>Project updated</p>
+                    <p>New comment</p>
+                    <p>Payment received</p>
+                </div>
+            </div>
+
+            <!-- Normal card -->
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="font-bold">Projects</h2>
+                <p class="text-2xl font-bold mt-2">18</p>
+            </div>
+
+            <!-- Normal card -->
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="font-bold">Revenue</h2>
+                <p class="text-2xl font-bold mt-2">$5,000</p>
+            </div>
+
+            <!-- Full width -->
+            <div class="col-span-full bg-emerald-600 text-white p-6 rounded-xl">
+                <h2 class="font-bold text-xl">
+                    Full Width Summary
+                </h2>
+
+                <p class="mt-2">
+                    This card uses col-span-full.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- EXERCISE 5: HOLY GRAIL -->
+    <!-- ===================================================== -->
+
+    <section class="p-8">
+        <h1 class="text-2xl font-bold mb-6">
+            Exercise 5 — Holy Grail Layout
+        </h1>
+
+        <div class="min-h-screen bg-white border border-gray-300 flex flex-col">
+
+            <!-- Header -->
+            <header class="bg-gray-800 text-white p-6">
+                <h2 class="text-xl font-bold">
+                    My Website
+                </h2>
+            </header>
+
+            <!-- Middle -->
+            <div class="flex flex-1">
+
+                <!-- Sidebar -->
+                <aside class="w-[220px] bg-gray-200 p-6">
+                    <h3 class="font-bold mb-4">
+                        Sidebar
+                    </h3>
+
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="hover:text-emerald-600">
+                                Dashboard
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:text-emerald-600">
+                                Profile
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:text-emerald-600">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Main -->
+                <main class="flex-1 p-8">
+                    <h2 class="text-2xl font-bold mb-4">
+                        Main Content
+                    </h2>
+
+                    <p class="text-gray-600">
+                        This is the main area of the Holy Grail layout.
+                        It automatically takes the remaining space.
+                    </p>
+                </main>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="bg-gray-800 text-white text-center p-4">
+                <p>
+                    © 2026 Layout Gym
+                </p>
+            </footer>
+
+        </div>
+    </section>
+
+</body>
+</html>
