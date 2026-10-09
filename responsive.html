@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Layout Gym | Responsive Design</title>
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+
+<!-- PAGE HEADER -->
+<header class="bg-slate-900 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-10 lg:py-12">
+        <p class="text-sm font-bold uppercase tracking-[0.2em] text-emerald-400">
+            Week 3 · Tailwind CSS
+        </p>
+        <h1 class="mt-3 text-4xl font-extrabold sm:text-5xl">
+            Layout Gym
+        </h1>
+        <p class="mt-3 max-w-2xl leading-7 text-slate-300">
+            Five exercises exploring responsive grids, navigation, flexible
+            layouts, hero sections and dark mode.
+        </p>
+    </div>
+</header>
+
+<main class="mx-auto max-w-7xl space-y-16 px-4 py-10 sm:px-6 lg:space-y-20 lg:px-10 lg:py-16">
+
+    <!-- TASK 1: RESPONSIVE PRODUCT GRID -->
+    <section id="products">
+        <div class="mb-7">
+            <p class="text-sm font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
+                Task 01
+            </p>
+            <h2 class="mt-2 text-3xl font-bold">Featured products</h2>
+            <p class="mt-2 text-slate-500 dark:text-slate-400">
+                One column on phones, two on small screens, three on large screens
+                and four on extra-large screens.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 lg:p-4 xl:grid-cols-4">
+
+            <!-- Product 1 -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex h-36 items-center justify-center bg-emerald-100 text-5xl dark:bg-emerald-950">🎧</div>
+                <div class="p-5">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Audio</p>
+                    <h3 class="mt-2 font-bold">Studio Headphones</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">Comfortable sound for work and play.</p>
+                    <div class="mt-5 flex items-center justify-between gap-2">
+                        <span class="font-bold">$79.00</span>
+                        <button class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500">View</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex h-36 items-center justify-center bg-blue-100 text-5xl dark:bg-blue-950">⌚</div>
+                <div class="p-5">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">Wearables</p>
+                    <h3 class="mt-2 font-bold">Smart Watch</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">Keep track of your day in style.</p>
+                    <div class="mt-5 flex items-center justify-between gap-2">
+                        <span class="font-bold">$120.00</span>
+                        <button class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500">View</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex h-36 items-center justify-center bg-violet-100 text-5xl dark:bg-violet-950">📷</div>
+                <div class="p-5">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-violet-600 dark:text-violet-400">Photography</p>
+                    <h3 class="mt-2 font-bold">Pocket Camera</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">Capture moments wherever you go.</p>
+                    <div class="mt-5 flex items-center justify-between gap-2">
+                        <span class="font-bold">$249.00</span>
+                        <button class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500">View</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex h-36 items-center justify-center bg-amber-100 text-5xl dark:bg-amber-950">⌨️</div>
+                <div class="p-5">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-amber-600 dark:text-amber-400">Workspace</p>
+                    <h3 class="mt-2 font-bold">Mechanical Keyboard</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">Make every keystroke count.</p>
+                    <div class="mt-5 flex items-center justify-between gap-2">
+                        <span class="font-bold">$95.00</span>
+                        <button class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500">View</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex h-36 items-center justify-center bg-pink-100 text-5xl dark:bg-pink-950">🎒</div>
+                <div class="p-5">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-pink-600 dark:text-pink-400">Lifestyle</p>
+                    <h3 class="mt-2 font-bold">Everyday Backpack</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">Room for your daily essentials.</p>
+                    <div class="mt-5 flex items-center justify-between gap-2">
+                        <span class="font-bold">$54.00</span>
+                        <button class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500">View</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex h-36 items-center justify-center bg-cyan-100 text-5xl dark:bg-cyan-950">🖱️</div>
+                <div class="p-5">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-cyan-600 dark:text-cyan-400">Workspace</p>
+                    <h3 class="mt-2 font-bold">Wireless Mouse</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">Smooth control for everyday tasks.</p>
+                    <div class="mt-5 flex items-center justify-between gap-2">
+                        <span class="font-bold">$35.00</span>
+                        <button class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500">View</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 7 -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex h-36 items-center justify-center bg-orange-100 text-5xl dark:bg-orange-950">🔊</div>
+                <div class="p-5">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-orange-600 dark:text-orange-400">Audio</p>
+                    <h3 class="mt-2 font-bold">Portable Speaker</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">Bring your music anywhere.</p>
+                    <div class="mt-5 flex items-center justify-between gap-2">
+                        <span class="font-bold">$49.00</span>
+                        <button class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500">View</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 8 -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex h-36 items-center justify-center bg-indigo-100 text-5xl dark:bg-indigo-950">💻</div>
+                <div class="p-5">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Technology</p>
+                    <h3 class="mt-2 font-bold">Laptop Stand</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">A more comfortable workspace.</p>
+                    <div class="mt-5 flex items-center justify-between gap-2">
+                        <span class="font-bold">$42.00</span>
+                        <button class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500">View</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- TASK 2: RESPONSIVE NAVBAR -->
+    <section id="navbar">
+        <div class="mb-7">
+            <p class="text-sm font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400">Task 02</p>
+            <h2 class="mt-2 text-3xl font-bold">Responsive navigation</h2>
+            <p class="mt-2 text-slate-500 dark:text-slate-400">A hamburger on phones and full navigation links from md upward.</p>
+        </div>
+
+        <nav class="flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+            <a href="#products" class="shrink-0 text-xl font-extrabold tracking-tight">
+                <span class="text-emerald-500">Layout</span>Gym
+            </a>
+
+            <div class="hidden items-center gap-5 md:flex lg:gap-8">
+                <a href="#products" class="text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400">Products</a>
+                <a href="#navbar" class="text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400">Navigation</a>
+                <a href="#hero" class="text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400">About</a>
+                <a href="#holy-grail" class="text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400">Layout</a>
+            </div>
+
+            <div class="flex shrink-0 items-center gap-2">
+                <button class="hidden rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:inline-flex">
+                    Get started
+                </button>
+
+                <!-- Decorative only: JavaScript is not required -->
+                <button type="button" aria-label="Open navigation menu" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 md:hidden dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </section>
+
+
+    <!-- TASK 3: HOLY GRAIL -->
+    <section id="holy-grail">
+        <div class="mb-7">
+            <p class="text-sm font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">Task 03</p>
+            <h2 class="mt-2 text-3xl font-bold">Holy Grail layout</h2>
+            <p class="mt-2 text-slate-500 dark:text-slate-400">The sidebar moves above the main area on phones and to the left on large screens.</p>
+        </div>
+
+        <div class="flex min-h-[420px] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm lg:flex-row dark:border-slate-800 dark:bg-slate-900">
+
+            <aside class="shrink-0 border-b border-slate-200 bg-slate-100 p-5 lg:w-[220px] lg:border-b-0 lg:border-r dark:border-slate-800 dark:bg-slate-950">
+                <p class="mb-4 text-xs font-bold uppercase tracking-widest text-slate-400">Workspace</p>
+                <nav class="flex flex-wrap gap-2 lg:flex-col">
+                    <a href="#holy-grail" class="rounded-lg bg-emerald-100 px-3 py-2 text-sm font-semibold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Dashboard</a>
+                    <a href="#products" class="rounded-lg px-3 py-2 text-sm hover:bg-white dark:hover:bg-slate-800">Products</a>
+                    <a href="#hero" class="rounded-lg px-3 py-2 text-sm hover:bg-white dark:hover:bg-slate-800">Projects</a>
+                    <a href="#navbar" class="rounded-lg px-3 py-2 text-sm hover:bg-white dark:hover:bg-slate-800">Settings</a>
+                </nav>
+            </aside>
+
+            <div class="flex min-w-0 flex-1 flex-col">
+                <header class="border-b border-slate-200 px-5 py-4 sm:px-8 dark:border-slate-800">
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Workspace / Overview</p>
+                    <h3 class="mt-1 text-xl font-bold">Your dashboard</h3>
+                </header>
+
+                <main class="flex-1 p-5 sm:p-8">
+                    <h4 class="text-2xl font-bold">Welcome back!</h4>
+                    <p class="mt-3 max-w-xl leading-7 text-slate-500 dark:text-slate-400">
+                        This area grows to fill the available space. On small screens,
+                        the sidebar appears first, above this content.
+                    </p>
+
+                    <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-700">
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Active projects</p>
+                            <p class="mt-2 text-3xl font-bold">08</p>
+                        </div>
+                        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-700">
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Completed tasks</p>
+                            <p class="mt-2 text-3xl font-bold">42</p>
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="border-t border-slate-200 bg-slate-50 px-5 py-4 text-center text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-400">
+                    Workspace footer
+                </footer>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TASK 4: HERO -->
+    <section id="hero">
+        <div class="mb-7">
+            <p class="text-sm font-bold uppercase tracking-widest text-orange-600 dark:text-orange-400">Task 04</p>
+            <h2 class="mt-2 text-3xl font-bold">Responsive hero section</h2>
+            <p class="mt-2 text-slate-500 dark:text-slate-400">Stacked on phones and side by side from md upward.</p>
+        </div>
+
+        <div class="grid items-center gap-8 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-8 md:grid-cols-2 md:gap-10 lg:p-12 dark:border-slate-800 dark:bg-slate-900">
+
+            <div class="min-w-0">
+                <p class="text-sm font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">Build something great</p>
+
+                <h3 class="mt-4 text-3xl font-extrabold leading-tight tracking-tight lg:text-5xl">
+                    Your next idea starts here.
+                </h3>
+
+                <p class="mt-5 leading-7 text-slate-600 dark:text-slate-300">
+                    Create better digital experiences with clean layouts,
+                    thoughtful design and responsive components that work
+                    across phones, tablets and desktops.
+                </p>
+
+                <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+                    <a href="#products" class="w-full rounded-xl bg-emerald-600 px-6 py-3 text-center font-semibold text-white transition hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:w-auto">
+                        Explore products
+                    </a>
+                    <a href="#holy-grail" class="w-full rounded-xl border border-slate-300 px-6 py-3 text-center font-semibold transition hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:w-auto dark:border-slate-700 dark:hover:bg-slate-800">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex min-h-56 items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-400 via-teal-500 to-cyan-700 p-6 sm:min-h-72 md:min-h-96">
+                <div class="w-full max-w-sm rounded-2xl border border-white/30 bg-white/15 p-5 text-white shadow-2xl backdrop-blur-sm sm:p-8">
+                    <div class="flex items-center justify-between gap-3">
+                        <span class="text-sm font-semibold">Creative workspace</span>
+                        <span class="rounded-full bg-white/20 px-3 py-1 text-xs">LIVE</span>
+                    </div>
+                    <div class="mt-8 space-y-3">
+                        <div class="h-3 w-3/4 rounded-full bg-white/90"></div>
+                        <div class="h-3 w-full rounded-full bg-white/50"></div>
+                        <div class="h-3 w-1/2 rounded-full bg-white/50"></div>
+                    </div>
+                    <div class="mt-8 grid grid-cols-3 gap-3">
+                        <div class="h-16 rounded-xl bg-white/20"></div>
+                        <div class="h-16 rounded-xl bg-white/30"></div>
+                        <div class="h-16 rounded-xl bg-white/20"></div>
+                    </div>
+                    <p class="mt-6 text-sm text-white/90">Ideas into experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TASK 5: DARK MODE -->
+    <section id="dark-mode">
+        <div class="mb-7">
+            <p class="text-sm font-bold uppercase tracking-widest text-pink-600 dark:text-pink-400">Task 05</p>
+            <h2 class="mt-2 text-3xl font-bold">Light & dark mode</h2>
+            <p class="mt-2 text-slate-500 dark:text-slate-400">
+                This sample changes with your browser's preferred color scheme.
+                Use DevTools to emulate light and dark mode.
+            </p>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-700 dark:bg-slate-900">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                    <h3 class="text-xl font-bold">Theme preview</h3>
+                    <p class="mt-2 text-slate-500 dark:text-slate-400">
+                        Backgrounds, text and borders all use dark variants.
+                    </p>
+                </div>
+                <span class="w-fit rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
+                    Theme ready
+                </span>
+            </div>
+
+            <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div class="rounded-xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-700 dark:bg-slate-950">
+                    <h4 class="font-bold">Card one</h4>
+                    <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">
+                        Subtle borders and readable text in either theme.
+                    </p>
+                </div>
+                <div class="rounded-xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-700 dark:bg-slate-950">
+                    <h4 class="font-bold">Card two</h4>
+                    <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">
+                        Tailwind applies the dark styles when the system preference is dark.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="border-t border-slate-200 bg-white px-4 py-8 text-center text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-400">
+    <p class="font-semibold">Layout Gym</p>
+    <p class="mt-1">Built with Tailwind CSS · Week 3</p>
+</footer>
+
+</body>
+</html>
